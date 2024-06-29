@@ -1,0 +1,428 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.25f1 (530ae0ba3889) revision 5442272'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 7113 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57660
+Successfully changed project path to: C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
+C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11976] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 2052415381 [EditorId] 2052415381 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11976] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 2052415381 [EditorId] 2052415381 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 101.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.25f1 (530ae0ba3889)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) R4 Graphics (ID=0x9851)
+    Vendor:   ATI
+    VRAM:     3556 MB
+    Driver:   27.20.1034.6
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.055925 seconds.
+- Loaded All Assemblies, in  2.273 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.837 seconds
+Domain Reload Profiling: 4096ms
+	BeginReloadAssembly (686ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (212ms)
+	RebuildNativeTypeToScriptingClass (66ms)
+	initialDomainReloadingComplete (445ms)
+	LoadAllAssembliesAndSetupDomain (847ms)
+		LoadAssemblies (672ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (833ms)
+			TypeCache.Refresh (828ms)
+				TypeCache.ScanAssembly (759ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1839ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1494ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (60ms)
+			SetLoadedEditorAssemblies (46ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (1059ms)
+			ProcessInitializeOnLoadMethodAttributes (318ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.933 seconds
+Refreshing native plugins compatible for Editor in 34.07 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.109 seconds
+Domain Reload Profiling: 10996ms
+	BeginReloadAssembly (2552ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (59ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (453ms)
+	RebuildCommonClasses (392ms)
+	RebuildNativeTypeToScriptingClass (105ms)
+	initialDomainReloadingComplete (470ms)
+	LoadAllAssembliesAndSetupDomain (3364ms)
+		LoadAssemblies (4227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (499ms)
+			TypeCache.Refresh (485ms)
+				TypeCache.ScanAssembly (428ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (4112ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3074ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (74ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (748ms)
+			ProcessInitializeOnLoadAttributes (1812ms)
+			ProcessInitializeOnLoadMethodAttributes (304ms)
+			AfterProcessingInitializeOnLoad (94ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (116ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 50.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5991 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.3 MB). Loaded Objects now: 6415.
+Memory consumption went from 195.3 MB to 194.0 MB.
+Total: 18.145700 ms (FindLiveObjects: 2.927900 ms CreateObjectMapping: 1.618700 ms MarkObjects: 11.302700 ms  DeleteObjects: 2.291800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/BeforeAfterTestCommandState.cs:  -> b5335096b805e070d1c48ec9209e057d
+  custom:scripting/monoscript/fileName/LogAssert.cs:  -> 195ab501c85f741ece9ac8b49385dcce
+  custom:scripting/monoscript/fileName/IMonoBehaviourTest.cs:  -> 93dca3fac2d68012529173d3e7bc10a2
+  custom:scripting/monoscript/fileName/Utils.cs:  -> 40c528c300bfc0733192292a788cb076
+  custom:scripting/monoscript/fileName/MonoBehaviourTest.cs:  -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/UnityTestAssemblyRunner.cs:  -> 6329fd25aa4b3ce344b8f9506a5c2047
+  custom:scripting/monoscript/fileName/DefaultTestWorkItem.cs:  -> f906b4fb5b78cb9d23a07212620919d9
+  custom:scripting/monoscript/fileName/CoroutineTestWorkItem.cs:  -> 8a69ee5c1adc29acc0a66cb7df14cbcf
+  custom:scripting/monoscript/fileName/TestActionCommand.cs:  -> 753f99c04dd69dc2a43030237870dd1f
+  custom:scripting/monoscript/fileName/ILogScope.cs:  -> e99dd640a2ac2c8b1c0c97725f23440d
+  custom:scripting/monoscript/fileName/IPrebuildSceneSetup.cs:  -> c89711320cb5af11897ec50fd61d4419
+  custom:scripting/monoscript/fileName/CategoryFilterExtended.cs:  -> fc9bf6f795e045112c18a4c1343c1ae1
+  custom:scripting/monoscript/fileName/ScriptingRuntimeProxy.cs:  -> 19d9ac4d844404a0464698120ed39275
+  custom:scripting/monoscript/fileName/ConditionalIgnoreAttribute.cs:  -> 9f2f3d4c6b56d5f470ccdd0e1820d51b
+  custom:scripting/monoscript/fileName/TestMustExpectAllLogsAttribute.cs:  -> cdf1c75549affd080e0ddbde5bcb7c34
+  custom:scripting/monoscript/fileName/ITestRunnerListener.cs:  -> d52675266925b8e603f210be3981d59b
+  custom:scripting/monoscript/fileName/TestExtensions.cs:  -> 8e47deac44d7b87eaa5df5d00556dc15
+  custom:scripting/monoscript/fileName/Is.cs:  -> 6922f89182cd28e32ba48e34cda7947d
+  custom:scripting/monoscript/fileName/BaseDelegator.cs:  -> d270baecbc007d1328bc5c9991d1dea9
+  custom:scripting/monoscript/fileName/QuaternionEqualityComparer.cs:  -> 0787e0a336d915c2829c2f55fd970a0d
+  custom:scripting/monoscript/fileName/PlaymodeTestsController.cs:  -> 59c9d4597d46ecf4c6fbc8f49c64d0b9
+  custom:scripting/monoscript/fileName/TestEnumeratorWrapper.cs:  -> 3e969f8448dc5644f60fbcb6f1badbcb
+  custom:scripting/monoscript/fileName/FloatEqualityComparer.cs:  -> 6ddc5d5b0944c660e6b695f37c9febc8
+  custom:scripting/monoscript/fileName/LogScope.cs:  -> a032a8edefa3a04276b9f24e5047f2ac
+  custom:scripting/monoscript/fileName/Vector3ComparerWithEqualsOperator.cs:  -> c497cde63ec72672e5f69e70b932688f
+  custom:scripting/monoscript/fileName/TestRunCallbackListener.cs:  -> 15fa13086a2949901b1e4a3584b83cd8
+  custom:scripting/monoscript/fileName/IOuterUnityTestAction.cs:  -> 58e7f8b884a5d88e319b8f448f29bfdb
+  custom:scripting/monoscript/fileName/TestResultRendererCallback.cs:  -> 215106b260625bb3e26681b849d9307d
+  custom:scripting/monoscript/fileName/RemoteTestResultDataFactory.cs:  -> 875f30f4d57949231d64836d9e348a72
+  custom:scripting/monoscript/fileName/SynchronousFilter.cs:  -> b84da53d6d10348793b3683f19a6d4b3
+  custom:scripting/monoscript/fileName/TestListenerWrapper.cs:  -> 9bd83ba3a6a675f3c605795064caa62b
+  custom:scripting/monoscript/fileName/AttributeHelper.cs:  -> dcab3630cb119e1a5f7f9c7b24677e49
+  custom:scripting/monoscript/fileName/RuntimeTestRunnerFilter.cs:  -> 526247a6af82c71973a55c9c5be36280
+  custom:scripting/monoscript/fileName/AllocatingGCMemoryConstraint.cs:  -> 8b2ed7fbfb529ba318fb8425f7a81278
+  custom:scripting/monoscript/fileName/TestResultExtensions.cs:  -> 1c512e213c49ce6d72b9d37b957b9372
+  custom:scripting/monoscript/fileName/UnityWorkItem.cs:  -> ce02ef2c77c866afeb6c04a89a364a8a
+  custom:scripting/monoscript/fileName/OuterUnityTestActionCommand.cs:  -> 36c13d7d2a2c5c2f372e7b1c0cc06d4d
+  custom:scripting/monoscript/fileName/PlayerConnectionMessageIds.cs:  -> 2e4b7265f0eeb40e1260d00fe6e4614e
+  custom:scripting/monoscript/fileName/LogMatch.cs:  -> fed715ef044674dde53628d58d931b50
+  custom:scripting/monoscript/fileName/UnityTestAttribute.cs:  -> a53f050fb661d50bb6c962963a554f8e
+  custom:scripting/monoscript/fileName/IEditModeTestYieldInstruction.cs:  -> ad49fb85f2d4ed0badb27552deac0771
+  custom:scripting/monoscript/fileName/TestCommandBuilder.cs:  -> bf61faf29c0aea0c4e5d4ac76abaee13
+  custom:scripting/monoscript/fileName/WorkItemFactory.cs:  -> d8b2e380888ccc980a475a01f04d7a45
+  custom:scripting/monoscript/fileName/IScriptingRuntimeProxy.cs:  -> c75af2a6ef439df9f19f151aeb5749ea
+  custom:scripting/monoscript/fileName/RemoteTestResultSender.cs:  -> 2b6acbe484994dc310d0ac406904e742
+  custom:scripting/monoscript/fileName/TestCommandPcHelper.cs:  -> f958b2880473418011bc0cda18245d1e
+  custom:scripting/monoscript/fileName/UnityTestExecutionContext.cs:  -> 4c0ef8e8d96fc20b3ec58c9447d6ec92
+  custom:scripting/monoscript/fileName/InvalidSignatureException.cs:  -> f250eccc836ee674127ecdee41f7a4ea
+  custom:scripting/monoscript/fileName/OutOfOrderExpectedLogMessageException.cs:  -> 4ff78bac16cc86124e588c20ad3ddba7
+  custom:scripting/monoscript/fileName/EnumerableRepeatedTestCommand.cs:  -> dbdc4517e80e66a31f48ce40e06931f2
+  custom:scripting/monoscript/fileName/ITestSuiteModifier.cs:  -> 4374b14ce25f3e6c8b983b3d579e38b4
+  custom:scripting/monoscript/fileName/Vector2ComparerWithEqualsOperator.cs:  -> 1851f392f974d4a42efb0de68a402e9b
+  custom:scripting/monoscript/fileName/Vector4ComparerWithEqualsOperator.cs:  -> 982db4358832ddfb456522b96543f1da
+  custom:scripting/monoscript/fileName/UnityTestMethodCommand.cs:  -> ccfa8ff8b49ded2664d646e8ee3d5ff4
+  custom:scripting/monoscript/fileName/UnitySetUpAttribute.cs:  -> 78bcd37bf54751e70200df4ae24f405b
+  custom:scripting/monoscript/fileName/UnityWorkItemDataHolder.cs:  -> 94e44d74f673f889418b2b9926b6615c
+  custom:scripting/monoscript/fileName/AssemblyLoadProxy.cs:  -> 0f3a4ee005eb8f7b33161c2ba6196e00
+  custom:scripting/monoscript/fileName/RestoreTestContextAfterDomainReload.cs:  -> 3f8ddcbc7c316ccf5012287995780eb2
+  custom:scripting/monoscript/fileName/IRemoteTestResultDataFactory.cs:  -> 75d430448dca0118dc834f9aa964be1e
+  custom:scripting/monoscript/fileName/PlayerQuitHandler.cs:  -> b4085dee8fd70ae04ac96945fafed489
+  custom:scripting/monoscript/fileName/AssemblyWrapper.cs:  -> 888ba979193ec837feef9add74101219
+  custom:scripting/monoscript/fileName/RemoteTestResultDataWithTestData.cs:  -> bcf701fb298ed6f8cab894b203300c37
+  custom:scripting/monoscript/fileName/CompositeWorkItem.cs:  -> bc884a89fde61fa75209209a03bbd836
+  custom:scripting/monoscript/fileName/IPostBuildCleanup.cs:  -> 8d43f6dbc44addb43106f91d15047771
+  custom:scripting/monoscript/fileName/PlaymodeTestsControllerSettings.cs:  -> 90cec9ec9d50d9e797d7b80fa88b49ed
+  custom:scripting/monoscript/fileName/BeforeAfterTestCommandBase.cs:  -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConstraintsExtensions.cs:  -> 89e01f1f8de15d891db3bad70117d924
+  custom:scripting/monoscript/fileName/UnityPlatformAttribute.cs:  -> e79555e200698f1b55c6c54851cd369e
+  custom:scripting/monoscript/fileName/Vector2EqualityComparer.cs:  -> 4ac8b0db10bbdb7ea68d4be944c5b941
+  custom:scripting/monoscript/fileName/SetUpTearDownCommand.cs:  -> 684e5d1c75373405f8a6c9575324286f
+  custom:scripting/monoscript/fileName/FailCommand.cs:  -> e0622be95cb9f4c04ff53066589d6d7e
+  custom:scripting/monoscript/fileName/TestResultRenderer.cs:  -> 2e8123de6d2eea4d42efb7a87e150b27
+  custom:scripting/monoscript/fileName/UnityTearDownAttribute.cs:  -> d90d4ba0821a80f48bd6cec8eab8964f
+  custom:scripting/monoscript/fileName/UnityCombinatorialStrategy.cs:  -> e857e6faada8b59173cb249a8a6be6fa
+  custom:scripting/monoscript/fileName/UnityTestTimeoutException.cs:  -> b7ec28ea102309dc20886c45fff1e1b5
+  custom:scripting/monoscript/fileName/ImmediateEnumerableCommand.cs:  -> 89dd27d23dccf969b99d79611e8fed9a
+  custom:scripting/monoscript/fileName/PlayModeRunnerCallback.cs:  -> 6cd874bc3032a6eaf4228f5877b27ba0
+  custom:scripting/monoscript/fileName/TestPlatform.cs:  -> 63c69f9b78d9a1c2cdf167569fd572b6
+  custom:scripting/monoscript/fileName/IAssemblyWrapper.cs:  -> 993dbd556e2f14ec6d4f6bce6cb00191
+  custom:scripting/monoscript/fileName/UnexpectedLogMessageException.cs:  -> a7bbf32861c66018271b093fc1d1061b
+  custom:scripting/monoscript/fileName/EnumerableSetUpTearDownCommand.cs:  -> 16b603dbb9724508977696171a42991f
+  custom:scripting/monoscript/fileName/FullNameFilter.cs:  -> 7c49c279cb0d631ca64d8b7d70065d9c
+  custom:scripting/monoscript/fileName/Vector4EqualityComparer.cs:  -> 998bf018f3e79a3b4501bebf13133ef3
+  custom:scripting/monoscript/fileName/UnhandledLogMessageException.cs:  -> fa6ee6fe2a221a71f213304ae56898c7
+  custom:scripting/monoscript/fileName/TestEnumerator.cs:  -> 26328e1622cb69ba0b1e01e906e7f65f
+  custom:scripting/monoscript/fileName/EnumerableApplyChangesToContextCommand.cs:  -> c2aa6cedc66892dd581c50a4d9b6a147
+  custom:scripting/monoscript/fileName/EnumerableTestMethodCommand.cs:  -> 9040b48595c4d63d6c1126d81d3f1105
+  custom:scripting/monoscript/fileName/CoroutineRunner.cs:  -> 846507eaccf9841c799a02861e075d47
+  custom:scripting/monoscript/fileName/UnityTestAssemblyBuilder.cs:  -> 5e02e71819f544263f933dbf6516d49f
+  custom:scripting/monoscript/fileName/PlayerTestAssemblyProvider.cs:  -> cbdd04f669e4e0054bad4f9d3133a10c
+  custom:scripting/monoscript/fileName/EnumerableRetryTestCommand.cs:  -> b281084796eb91cc19de80f3f2b73a56
+  custom:scripting/monoscript/fileName/ConstructDelegator.cs:  -> c271ca33e5434ac87e82546dd149c303
+  custom:scripting/monoscript/fileName/PlaymodeWorkItemFactory.cs:  -> 8bb2d7c0ad22b08cf17b1748007ae8c3
+  custom:scripting/monoscript/fileName/IEnumerableTestMethodCommand.cs:  -> 81260787415c187c9e413e476b816cd2
+  custom:scripting/monoscript/fileName/PrebuildSceneSetupAttribute.cs:  -> 7863da9f66129a3cef8eac0a1f19b990
+  custom:scripting/monoscript/fileName/RemoteTestData.cs:  -> 51ba1ddd57fb71948e60067806b9cfcd
+  custom:scripting/monoscript/fileName/ColorEqualityComparer.cs:  -> 9ae684bc4a6b608abc9f7f131bd7cb1d
+  custom:scripting/precompiled-assembly-types:UnityEngine.TestRunner:  -> f5758234275f5346968d00e3b1a1c0e4
+  custom:scripting/monoscript/fileName/TestRunCallbackAttribute.cs:  -> c61459d4a70eab5bd767d5a1f82f55d8
+  custom:scripting/monoscript/fileName/PostBuildCleanupAttribute.cs:  -> 71391ff444f943d9ad8dd0d42b7ac81f
+  custom:scripting/monoscript/fileName/IStateSerializer.cs:  -> 2c22f7cb714163eee04bfe4b72ec4957
+  custom:scripting/monoscript/fileName/UnityLogCheckDelegatingCommand.cs:  -> 410acedf83a5c4e9d5a212b5635d0c88
+  custom:scripting/monoscript/fileName/AssemblyNameFilter.cs:  -> ce7ef29746fb23841833950bb87cfa6a
+  custom:scripting/monoscript/fileName/RemoteTestResultData.cs:  -> 68a2b51f8872b9ef697b2155d9835735
+  custom:scripting/monoscript/fileName/OrderedTestSuiteModifier.cs:  -> 6a8006d91a7636d39c6731494060c3c2
+  custom:scripting/monoscript/fileName/IAsyncTestAssemblyBuilder.cs:  -> d4bd9849c11964145b1082a4b1d477fa
+  custom:scripting/monoscript/fileName/StacktraceFilter.cs:  -> 2f4728b5b8f653bd2197ec8c4b722e7d
+  custom:scripting/monoscript/fileName/IAssemblyLoadProxy.cs:  -> 10a2bd4f9f1d29ac107ff7e510533c16
+  custom:scripting/monoscript/fileName/LogEvent.cs:  -> 9bf386b9808c16608387e196f7a5e9d6
+  custom:scripting/monoscript/fileName/ITestRunCallback.cs:  -> 7d90e4d27cccfe89ef24a93578e15a74
+  custom:scripting/monoscript/fileName/ActionDelegator.cs:  -> f2eb6c2fd33630cfdd6d3183b4a2ca3f
+  custom:scripting/monoscript/fileName/EnumerableTestState.cs:  -> 30e3efb82d3f99d65cdecdd2f0bc0194
+  custom:scripting/monoscript/fileName/Vector3EqualityComparer.cs:  -> 1c8652cac1f220d6409ab1ba3f211615
+========================================================================
+Received Import Request.
+  Time since last request: 1024981.102439 seconds.
+  path: Assets/Scripts/Tests/Player/Player2DPhysicsBasedMovementTest.cs
+  artifactKey: Guid(abd66037f404fc2448e3cb46db13b461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tests/Player/Player2DPhysicsBasedMovementTest.cs using Guid(abd66037f404fc2448e3cb46db13b461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456495d91bdf6aa3bbc19397263739e1') in 0.013373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Scripts/Tests/Player/_Tests.Player.asmdef
+  artifactKey: Guid(2b54f8c86b2b0f949a2f43c0d3137e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tests/Player/_Tests.Player.asmdef using Guid(2b54f8c86b2b0f949a2f43c0d3137e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9115db302801ef0cd0042ed86e273b1c') in 0.002527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 278.050742 seconds.
+  path: Assets/Scripts/Tests/_Tests.asmdef
+  artifactKey: Guid(bce304633ceb29e4a9d79d34c5e6684b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tests/_Tests.asmdef using Guid(bce304633ceb29e4a9d79d34c5e6684b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61e0a6088886d51f08e685f64559e07') in 0.002479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 19.822 seconds
+Refreshing native plugins compatible for Editor in 23.26 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.084 seconds
+Domain Reload Profiling: 23883ms
+	BeginReloadAssembly (673ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (23ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (206ms)
+	RebuildNativeTypeToScriptingClass (51ms)
+	initialDomainReloadingComplete (173ms)
+	LoadAllAssembliesAndSetupDomain (18694ms)
+		LoadAssemblies (17352ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1778ms)
+			TypeCache.Refresh (1455ms)
+				TypeCache.ScanAssembly (1286ms)
+			ScanForSourceGeneratedMonoScriptInfo (273ms)
+			ResolveRequiredComponents (46ms)
+	FinalizeReload (4085ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3379ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (30ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (512ms)
+			ProcessInitializeOnLoadAttributes (2406ms)
+			ProcessInitializeOnLoadMethodAttributes (350ms)
+			AfterProcessingInitializeOnLoad (33ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.CreatePipeline () [0x00039] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:733 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_scriptableRendererData () [0x00015] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:921 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_defaultShader () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:1624 
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 733)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.CreatePipeline () [0x00039] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:733 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_scriptableRendererData () [0x00015] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:921 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.GetMaterial (UnityEngine.Rendering.Universal.DefaultMaterialType materialType) [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:827 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_defaultMaterial () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:1526 
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 733)
+
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 21.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5921 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (1.3 MB). Loaded Objects now: 6436.
+Memory consumption went from 196.2 MB to 194.9 MB.
+Total: 16.840800 ms (FindLiveObjects: 1.908000 ms CreateObjectMapping: 1.111100 ms MarkObjects: 11.734500 ms  DeleteObjects: 2.082500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.CreatePipeline () [0x00039] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:733 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_scriptableRendererData () [0x00015] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:921 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_defaultShader () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:1624 
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 733)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.CreatePipeline () [0x00039] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:733 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_scriptableRendererData () [0x00015] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:921 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.GetMaterial (UnityEngine.Rendering.Universal.DefaultMaterialType materialType) [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:827 
+  at UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset.get_defaultMaterial () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11\Runtime\Data\UniversalRenderPipelineAsset.cs:1526 
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 733)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:srp/default-shader: d785cba07c15c19b5a745ff29a9f9c43 -> 886a89792de1e9d3697bddabf731a298
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:srp/default-material: 1323b11ab5f8e84b9c4553e3cd30b8d1 -> 00000000000000000f00000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 299.437199 seconds.
+  path: Assets/Scripts/Game/Player/Player2DPhysicsBasedMovement.cs
+  artifactKey: Guid(b365afd739c61ea4f852d91ca9a59433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Player/Player2DPhysicsBasedMovement.cs using Guid(b365afd739c61ea4f852d91ca9a59433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c35900a11f0d82bb628f39e58a028f1') in 0.005865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
