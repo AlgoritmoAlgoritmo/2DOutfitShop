@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd697efea24e4248aabaf3435439eed, type: 3}
   m_Name: 02- LongPants Item ScriptableObject
   m_EditorClassIdentifier: 
-  itemName: Cowboy hat
-  itemPrice: 50
+  itemName: Long pants
+  itemPrice: 20
   itemSprite: {fileID: 21300000, guid: b0786535ba38e2c4284e52261d96a9ec, type: 3}

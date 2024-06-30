@@ -9,7 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.Gameplay.Items;
-
+using Game.Gameplay.Wallet.Interfaces;
 
 namespace Game.Gameplay.Shop {
     public class OutfitShopController : MonoBehaviour {
@@ -18,8 +18,9 @@ namespace Game.Gameplay.Shop {
         private OutfitShopView outfitShopView;
         [SerializeField]
         private ItemDatabaseScriptableObject itemDatabase;
-        #endregion
 
+        private IWallet currentWallet;
+        #endregion
 
         #region MonoBehaviour methods
         private void Start() {
@@ -29,6 +30,10 @@ namespace Game.Gameplay.Shop {
         #endregion
 
         #region Public methods
+        public void SetWallet( GameObject _gameObject ) {
+            currentWallet = _gameObject.GetComponent<IWallet>();
+        }
+
         public void DisplayView() {
             outfitShopView.Display();
         }
@@ -38,7 +43,7 @@ namespace Game.Gameplay.Shop {
         }
 
         public void SellItemToPlayer( ItemScriptableObject _item ) {
-        
+            currentWallet.RemoveMoney( _item.ItemPrice );
         }
         #endregion
 

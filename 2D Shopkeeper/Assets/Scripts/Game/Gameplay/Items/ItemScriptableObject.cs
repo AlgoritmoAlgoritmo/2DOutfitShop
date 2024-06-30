@@ -9,7 +9,8 @@ using UnityEngine;
 
 
 namespace Game.Gameplay.Items {
-    [CreateAssetMenu( fileName = "New Item ScriptableObject", menuName = "BGSTask/Items/Item ScriptableObject" )]
+    [CreateAssetMenu( fileName = "New Item ScriptableObject",
+                menuName = "BGSTask/Items/Item ScriptableObject" )]
     public class ItemScriptableObject : ScriptableObject {
         #region Variables
         [SerializeField]

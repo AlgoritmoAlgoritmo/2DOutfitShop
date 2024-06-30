@@ -11,14 +11,23 @@ using UnityEngine;
 
 
 namespace Game.Gameplay.Wallet {
-public class WalletDataScriptableObject : MonoBehaviour {
-    #region Variables
-    #endregion
+    [CreateAssetMenu( fileName = "New Wallet ScriptableObject",
+                menuName = "BGSTask/Wallet/Wallet ScriptableObject" )]
+    public class WalletDataScriptableObject : ScriptableObject {
+        #region Variables
+        [SerializeField]
+        private int moneyAmount;
+        public int MoneyAmount => moneyAmount;
+        #endregion
 
-    #region Public methods
-    #endregion
+        #region Public methods
+        public void AddMoney( int _amount) {
+            moneyAmount += _amount;
+        }
 
-    #region Private methods
-    #endregion
-}
+        public void RemoveMoney( int _amount ) {
+            moneyAmount -= _amount;
+        }
+        #endregion
+    }
 }

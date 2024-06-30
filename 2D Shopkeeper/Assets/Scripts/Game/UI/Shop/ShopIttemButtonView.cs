@@ -36,8 +36,5 @@ namespace Game.UI.Shop {
             GetComponentInChildren<Button>().onClick.AddListener( _action );
         }
         #endregion
-
-        #region Private methods
-        #endregion
     }
 }

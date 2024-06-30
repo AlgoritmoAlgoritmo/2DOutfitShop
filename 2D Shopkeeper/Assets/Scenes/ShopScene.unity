@@ -1342,6 +1342,24 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1199859121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8989104528316986509, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
+  m_PrefabInstance: {fileID: 1192496047788494333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199859127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199859121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbae5b78dae6678428ca265b29d1238d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walletDataScriptableObject: {fileID: 11400000, guid: 37c6e17adb419db4ca8dc45ea7564e0e, type: 2}
 --- !u!224 &1267768858 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6588327999690569793, guid: e3a559e887beac145854224e2186b7aa, type: 3}
@@ -1634,6 +1652,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456629485}
+        m_TargetAssemblyTypeName: Game.Gameplay.Shop.OutfitShopController, Assembly-CSharp
+        m_MethodName: SetWallet
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1973,7 +2003,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8989104528316986509, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1199859127}
   m_SourcePrefab: {fileID: 100100000, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
 --- !u!1001 &8980988134589403750
 PrefabInstance:

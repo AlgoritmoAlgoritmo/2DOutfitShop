@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd697efea24e4248aabaf3435439eed, type: 3}
   m_Name: 03- Shoes Item ScriptableObject
   m_EditorClassIdentifier: 
-  itemName: Cowboy hat
-  itemPrice: 50
-  itemSprite: {fileID: 21300000, guid: b0786535ba38e2c4284e52261d96a9ec, type: 3}
+  itemName: Shoes
+  itemPrice: 40
+  itemSprite: {fileID: 21300000, guid: bbbfcf42df917ed44b03c064ec93ae39, type: 3}
