@@ -20,6 +20,8 @@ namespace Game.Player {
         #region Variables
         [SerializeField]
         private float speed = 1f;
+        public float Speed { get; set; }
+
         [SerializeField]
         private string actionName = "Move";
 
