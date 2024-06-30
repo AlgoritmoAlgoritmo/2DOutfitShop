@@ -18,6 +18,7 @@ namespace Game.Gameplay.Wallet {
         private WalletDataScriptableObject walletDataScriptableObject;
         #endregion
 
+
         #region Public methods
         public int GetCurrentAmount() {
             return walletDataScriptableObject.MoneyAmount;
@@ -28,6 +29,10 @@ namespace Game.Gameplay.Wallet {
         }
 
         public void RemoveMoney( int _amount ) {
+            if( walletDataScriptableObject.MoneyAmount < _amount )
+                throw new System.InvalidOperationException(
+                        "Thre's not enough enough money in the wallet");
+
             walletDataScriptableObject.RemoveMoney( _amount );
         }
         #endregion

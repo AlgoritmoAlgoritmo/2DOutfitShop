@@ -5,11 +5,11 @@
 */
 
 
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using Game.Gameplay.Items;
 using Game.Gameplay.Wallet.Interfaces;
+using Game.Gameplay.Inventory.Interfaces;
 
 namespace Game.Gameplay.Shop {
     public class OutfitShopController : MonoBehaviour {
@@ -20,7 +20,9 @@ namespace Game.Gameplay.Shop {
         private ItemDatabaseScriptableObject itemDatabase;
 
         private IWallet currentWallet;
+        private IInventory currentInventory;
         #endregion
+
 
         #region MonoBehaviour methods
         private void Start() {
@@ -29,9 +31,11 @@ namespace Game.Gameplay.Shop {
         }
         #endregion
 
+
         #region Public methods
-        public void SetWallet( GameObject _gameObject ) {
+        public void SetCustomerData( GameObject _gameObject ) {
             currentWallet = _gameObject.GetComponent<IWallet>();
+            currentInventory = _gameObject.GetComponent<IInventory>();
         }
 
         public void DisplayView() {
@@ -43,9 +47,27 @@ namespace Game.Gameplay.Shop {
         }
 
         public void SellItemToPlayer( ItemScriptableObject _item ) {
-            currentWallet.RemoveMoney( _item.ItemPrice );
+            try {
+                currentWallet.RemoveMoney( _item.ItemPrice );
+
+                try {
+                    currentInventory.AddItem( _item );
+
+                // if _item cannot be added, return money to player
+                } catch ( System.IndexOutOfRangeException ) {
+                    currentWallet.AddMoney( _item.ItemPrice );
+                    // TO DO: Display error message
+                    Debug.Log( "_item cannot be added, return money to player" );
+                }
+
+            // if player doesn't have enough money
+            } catch (System.InvalidOperationException) {
+                // TO DO: Display error message
+                Debug.Log( "player doesn't have enough money" );
+            }
         }
         #endregion
+
 
         #region Private methods
         private void Configure() {

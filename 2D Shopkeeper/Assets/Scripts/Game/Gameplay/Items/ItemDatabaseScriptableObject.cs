@@ -20,6 +20,13 @@ namespace Game.Gameplay.Items {
         #endregion
 
         #region Public methods
+        public void AddItem( ItemScriptableObject _item ) {
+            items.Add(_item);
+        }
+
+        public void RemoveItem( ItemScriptableObject _item ) {
+            items.Remove( _item );
+        }
         #endregion
     }
 }
