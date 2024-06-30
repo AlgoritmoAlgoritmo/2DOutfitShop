@@ -654,7 +654,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1036578161}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 202811202}
   m_HandleRect: {fileID: 202811201}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1679,6 +1679,7 @@ MonoBehaviour:
     uiParentObject: {fileID: 662871443}
     itemButtonsParent: {fileID: 1430962780}
     itemButtonPrefab: {fileID: 5610204248029656884, guid: b7ab9357f210b8945b348823b2ac0329, type: 3}
+  itemDatabase: {fileID: 11400000, guid: a82dc939f82d1634b81188f0a3a886d9, type: 2}
 --- !u!1 &1604311924
 GameObject:
   m_ObjectHideFlags: 0

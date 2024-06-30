@@ -4,7 +4,7 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "_Game.Player"
+        "_Game.Gameplay.Player"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
