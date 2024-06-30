@@ -1,22 +1,27 @@
 /*
 * Author: Iris Bermudez
 * GitHub: https://github.com/AlgoritmoAlgoritmo
-* Date: YYYY/MM/DD
+* Date: 2024/06/30
 */
 
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ItemScriptableObject : MonoBehaviour {
-    #region Variables
-    #endregion
+namespace Game.Items {
+    [CreateAssetMenu( fileName = "New Item ScriptableObject", menuName = "BGSTask/Items/Item ScriptableObject" )]
+    public class ItemScriptableObject : ScriptableObject {
+        #region Variables
+        [SerializeField]
+        private string itemName;
+        public string ItemName => itemName;
 
-    #region Public methods
-    #endregion
-
-    #region Private methods
-    #endregion
+        [SerializeField]
+        private int itemPrice;
+        public int ItemPrice => itemPrice;
+        [SerializeField]
+        private Sprite itemSprite;
+        public Sprite ItemSprite => itemSprite;
+        #endregion
+    }
 }

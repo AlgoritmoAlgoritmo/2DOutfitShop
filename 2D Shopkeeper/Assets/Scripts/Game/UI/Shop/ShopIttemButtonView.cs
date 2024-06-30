@@ -12,6 +12,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
 
+
+
 namespace Game.UI.Shop {
     public class ShopIttemButtonView : MonoBehaviour {
         #region Variables
