@@ -16,7 +16,9 @@ namespace Game.Gameplay.Items {
         #region Variables
         [SerializeField]
         private List<ItemScriptableObject> items;
-        public List<ItemScriptableObject> Items => items;
+        public List<ItemScriptableObject> Items {
+                                get => items;
+                                set => items = value; }
         #endregion
 
         #region Public methods

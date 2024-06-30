@@ -17,10 +17,12 @@ namespace Game.Gameplay.Wallet {
         #region Variables
         [SerializeField]
         private int moneyAmount;
-        public int MoneyAmount => moneyAmount;
+        public int MoneyAmount {
+            get => moneyAmount;
+            set => moneyAmount = value; }
         #endregion
 
-        #region Public methods
+            #region Public methods
         public void AddMoney( int _amount) {
             moneyAmount += _amount;
         }

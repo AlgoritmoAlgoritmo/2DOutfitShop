@@ -1936,6 +1936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2134287288}
+  - component: {fileID: 2134287289}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -1962,6 +1963,21 @@ Transform:
   - {fileID: 1178381131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134287289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134287287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd77891ea9045e408186a663ea3f677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starterAmountOfMoney: 400
+  wallet: {fileID: 11400000, guid: 37c6e17adb419db4ca8dc45ea7564e0e, type: 2}
+  playerItems: {fileID: 11400000, guid: 2da7c940c8d8ab747a7c18c9fa543bfe, type: 2}
 --- !u!1001 &1192496047788494333
 PrefabInstance:
   m_ObjectHideFlags: 0

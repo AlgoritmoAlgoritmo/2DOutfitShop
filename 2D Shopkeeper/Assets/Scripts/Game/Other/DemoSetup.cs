@@ -1,22 +1,45 @@
 /*
 * Author: Iris Bermudez
 * GitHub: https://github.com/AlgoritmoAlgoritmo
-* Date: YYYY/MM/DD
+* Date: 2024/06/30
 */
 
 
+#if UNITY_EDITOR
+using Game.Gameplay.Items;
+using Game.Gameplay.Wallet;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-public class DemoSetup : MonoBehaviour {
-    #region Variables
-    #endregion
+namespace Other {
+    public class DemoSetup : MonoBehaviour {
+        #region Variables
+        [SerializeField]
+        private int starterAmountOfMoney = 400;
+        [SerializeField]
+        private WalletDataScriptableObject wallet;
+        [SerializeField]
+        private ItemDatabaseScriptableObject playerItems;
+        #endregion
 
-    #region Public methods
-    #endregion
+        #region MonoBehaviour methods
+        private void Awake() {
+            ResetData();
+        }
 
-    #region Private methods
-    #endregion
+        private void OnApplicationQuit() {
+            ResetData();
+        }
+        #endregion
+
+        #region Private methods
+        private void ResetData() {
+            wallet.MoneyAmount = starterAmountOfMoney;
+            playerItems.Items = new List<ItemScriptableObject>();
+        }
+        #endregion
+    }
 }
+#endif
