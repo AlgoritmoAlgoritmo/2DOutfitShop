@@ -27,8 +27,6 @@ namespace Game.Gameplay.Shop {
 
 
         #region Public methods
-
-
         public void Refresh( List<ItemScriptableObject> _itemList ) {
             DeleteAllInstances();
             InstantiateNewButtons( _itemList );

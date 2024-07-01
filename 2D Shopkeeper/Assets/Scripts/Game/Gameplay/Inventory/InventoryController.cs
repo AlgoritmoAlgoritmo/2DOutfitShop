@@ -6,11 +6,9 @@
 
 
 using Game.Gameplay.Inventory.Interfaces;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.Gameplay.Items;
-
 
 
 namespace Game.Gameplay.Inventory {
@@ -18,9 +16,20 @@ namespace Game.Gameplay.Inventory {
         #region Variables
         [SerializeField]
         private InventoryDataScriptableObject inventoryDataScriptableObject;
+        [SerializeField]
+        private InventoryView inventoryView;
         #endregion
 
         #region Public methods
+        public void OpenInventory() {
+            inventoryView.DisplayInventory();
+            inventoryView.Refresh( inventoryDataScriptableObject.GetItems() );
+        }
+
+        public void CloseInventory() {
+            inventoryView.HideInventory();
+        }
+
         public void AddItem( ItemScriptableObject _item ) {
             inventoryDataScriptableObject.AddItem(_item);
         }
@@ -33,8 +42,6 @@ namespace Game.Gameplay.Inventory {
         public List<ItemScriptableObject> GetItemsList() {
             return inventoryDataScriptableObject.GetItems();
         }
-
-
         #endregion
 
         #region Protected methods
