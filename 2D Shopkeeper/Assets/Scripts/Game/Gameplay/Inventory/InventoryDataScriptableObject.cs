@@ -7,7 +7,7 @@
 
 using UnityEngine;
 using Game.Gameplay.Items;
-
+using System.Collections.Generic;
 
 namespace Game.Gameplay.Inventory {
     [CreateAssetMenu( fileName = "New Inventory ScriptableObject",
@@ -33,6 +33,10 @@ namespace Game.Gameplay.Inventory {
                 throw new System.IndexOutOfRangeException( "Inventory is already empty." );
 
             itemDatabase.RemoveItem( item );
+        }
+
+        public List<ItemScriptableObject> GetItems() {
+            return itemDatabase.Items;
         }
         #endregion
     }

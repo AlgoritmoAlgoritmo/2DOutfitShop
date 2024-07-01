@@ -11,13 +11,17 @@ using Game.Gameplay.Items;
 using Game.Gameplay.Wallet.Interfaces;
 using Game.Gameplay.Inventory.Interfaces;
 
+
+
 namespace Game.Gameplay.Shop {
     public class OutfitShopController : MonoBehaviour {
         #region Variables
         [SerializeField]
+        private ItemDatabaseScriptableObject itemDatabase;
+        [SerializeField]
         private OutfitShopView outfitShopView;
         [SerializeField]
-        private ItemDatabaseScriptableObject itemDatabase;
+        private ShopInventoryView shopInventoryView;
 
         private IWallet currentWallet;
         private IInventory currentInventory;
@@ -36,6 +40,8 @@ namespace Game.Gameplay.Shop {
         public void SetCustomerData( GameObject _gameObject ) {
             currentWallet = _gameObject.GetComponent<IWallet>();
             currentInventory = _gameObject.GetComponent<IInventory>();
+
+            shopInventoryView.Refresh( currentInventory.GetItemsList() );
         }
 
         public void DisplayView() {
@@ -52,6 +58,7 @@ namespace Game.Gameplay.Shop {
 
                 try {
                     currentInventory.AddItem( _item );
+                    shopInventoryView.Refresh( currentInventory.GetItemsList() );
 
                 // if _item cannot be added, return money to player
                 } catch ( System.IndexOutOfRangeException ) {

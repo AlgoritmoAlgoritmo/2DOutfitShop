@@ -6,13 +6,14 @@
 
 
 using Game.Gameplay.Items;
-
+using System.Collections.Generic;
 
 namespace Game.Gameplay.Inventory.Interfaces {
     public interface IInventory {
         #region Public methods
         public void AddItem( ItemScriptableObject _item );
         public void RemoveItem( ItemScriptableObject _item );
+        public List<ItemScriptableObject> GetItemsList();
         #endregion
     }
 }

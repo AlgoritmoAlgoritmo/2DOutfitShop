@@ -17,8 +17,6 @@ namespace Game.Gameplay.Inventory {
     public class InventoryController : MonoBehaviour, IInventory {
         #region Variables
         [SerializeField]
-        private InventoryView inventoryView;
-        [SerializeField]
         private InventoryDataScriptableObject inventoryDataScriptableObject;
         #endregion
 
@@ -27,12 +25,20 @@ namespace Game.Gameplay.Inventory {
             inventoryDataScriptableObject.AddItem(_item);
         }
 
+
         public void RemoveItem( ItemScriptableObject _item ) {
             inventoryDataScriptableObject.RemoveItem( _item );
         }
+
+        public List<ItemScriptableObject> GetItemsList() {
+            return inventoryDataScriptableObject.GetItems();
+        }
+
+
         #endregion
 
-        #region Private methods
+        #region Protected methods
+
         #endregion
     }
 }
