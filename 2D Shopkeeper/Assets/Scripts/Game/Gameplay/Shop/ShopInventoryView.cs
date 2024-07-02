@@ -5,10 +5,8 @@
 */
 
 
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Game.Gameplay.Inventory.Interfaces;
 using Game.Gameplay.Items;
 using Game.Gameplay.UI.Shop;
 
