@@ -7,6 +7,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Game.Gameplay.Items;
 using Game.Gameplay.Inventory.Interfaces;
 
@@ -19,6 +20,9 @@ namespace Game.Gameplay.Inventory {
         private GameObject inventoryPanel;
         [SerializeField]
         private GameObject itemButtonPrefab;
+        [SerializeField]
+        private string icongObjectName = "Icon";
+
         [SerializeField]
         private Transform inventoryButtonsParent;
 
@@ -59,10 +63,18 @@ namespace Game.Gameplay.Inventory {
         }
 
         private GameObject InstantiateNewButton( ItemScriptableObject _item ) {
-            GameObject instance = GameObject.Instantiate( itemButtonPrefab, inventoryButtonsParent );
+            GameObject instance = GameObject.Instantiate( itemButtonPrefab,
+                                                            inventoryButtonsParent );
+            try {
+                instance.transform.Find( icongObjectName ).GetComponent<Image>()
+                                                            .sprite = _item.ItemSprite;
+            } catch {
+                Debug.Log($"Make sure there is an {icongObjectName} child object in the button prefab.");
+            }
 
             return instance.gameObject;
         }
+
         #endregion
     }
 }
