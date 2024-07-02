@@ -6,18 +6,16 @@
 
 
 
-using UnityEngine;
+using System.Collections.Generic;
+using Game.Gameplay.Items;
 
 
-namespace Game.Gameplayy.Inventory.Interfaces {
-    public class IIventoryView : MonoBehaviour {
-        #region Variables
-        #endregion
-
+namespace Game.Gameplay.Inventory.Interfaces {
+    public interface IIventoryView {
         #region Public methods
-        #endregion
-
-        #region Private methods
+        public void DisplayInventory();
+        public void HideInventory();
+        public void Refresh( List<ItemScriptableObject> _itemList );
         #endregion
     }
 }

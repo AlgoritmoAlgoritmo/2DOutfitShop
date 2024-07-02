@@ -9,16 +9,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Game.Gameplay.Items;
 using Game.Gameplay.UI.Shop;
-
+using Game.Gameplay.Inventory.Interfaces;
 
 namespace Game.Gameplay.Shop {
     [System.Serializable]
-    public class ShopInventoryView {
+    public class ShopInventoryView : IIventoryView{
         #region Variables
         [SerializeField]
         private Transform buttonParent;
         [SerializeField]
         private InventoryButtonView buttonPrefab;
+
 
         private List<GameObject> buttonsInstances = new List<GameObject>();
         #endregion
@@ -28,6 +29,16 @@ namespace Game.Gameplay.Shop {
         public void Refresh( List<ItemScriptableObject> _itemList ) {
             DeleteAllInstances();
             InstantiateNewButtons( _itemList );
+        }
+
+        public void DisplayInventory() {
+            // Not implemented due to a lack of use
+            throw new System.NotImplementedException();
+        }
+
+        public void HideInventory() {
+            // Not implemented due to a lack of use
+            throw new System.NotImplementedException();
         }
         #endregion
 
@@ -54,7 +65,7 @@ namespace Game.Gameplay.Shop {
             instance.Configure( _item.ItemSprite );
 
             return instance.gameObject;
-        }
+        }        
         #endregion
     }
 }

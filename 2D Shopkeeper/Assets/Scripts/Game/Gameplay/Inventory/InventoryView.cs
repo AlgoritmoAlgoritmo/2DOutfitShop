@@ -5,14 +5,15 @@
 */
 
 
-using Game.Gameplay.Items;
 using System.Collections.Generic;
 using UnityEngine;
+using Game.Gameplay.Items;
+using Game.Gameplay.Inventory.Interfaces;
 
 
 namespace Game.Gameplay.Inventory {
     [System.Serializable]
-    public class InventoryView {
+    public class InventoryView : IIventoryView {
         #region Variables
         [SerializeField]
         private GameObject inventoryPanel;
