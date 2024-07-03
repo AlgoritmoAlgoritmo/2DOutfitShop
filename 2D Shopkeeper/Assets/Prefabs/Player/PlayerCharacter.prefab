@@ -16,8 +16,6 @@ GameObject:
   - component: {fileID: 47349492105269650}
   - component: {fileID: 3796604753789350773}
   - component: {fileID: 1288490812132437324}
-  - component: {fileID: 1474957376970450890}
-  - component: {fileID: 1825673838297477545}
   m_Layer: 3
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -238,45 +236,8 @@ MonoBehaviour:
   inventoryView:
     inventoryPanel: {fileID: 0}
     itemButtonPrefab: {fileID: 0}
+    icongObjectName: Icon
     inventoryButtonsParent: {fileID: 0}
---- !u!95 &1474957376970450890
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989104528316986509}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4000345f0d0f291429813fdcc90e3026, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1825673838297477545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989104528316986509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adebaa693e5b5e24689d7e7f1c343dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1474957376970450890}
-  actionName: Move
-  leftTriggerName: walkLeftTrigger
-  rightTriggerName: walkRightTrigger
-  idleTrigger: iddleTrigger
 --- !u!1001 &5613754128333063840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,6 +290,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95000012403032898, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4d48acf3d9ef5884a942706defaa541a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

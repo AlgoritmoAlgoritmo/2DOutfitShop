@@ -5,10 +5,10 @@
 */
 
 
-using Game.Gameplay.Inventory.Interfaces;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.Gameplay.Items;
+using Game.Gameplay.Inventory.Interfaces;
 
 
 namespace Game.Gameplay.Inventory {
