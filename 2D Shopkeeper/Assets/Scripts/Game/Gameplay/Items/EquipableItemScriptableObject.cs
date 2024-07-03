@@ -5,10 +5,9 @@
 */
 
 
-using Game.Gameplay.Equipment.Data;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Game.Gameplay.Equipment.Data;
 
 
 namespace Game.Gameplay.Items {
@@ -16,6 +15,10 @@ namespace Game.Gameplay.Items {
                 menuName = "BGSTask/Items/EquipableItem ScriptableObject" )]
     public class EquipableItemScriptableObject : ItemScriptableObject {
         #region Variables
+        [SerializeField]
+        private string equipmentType = "Pants";
+        public string EquipmentType => equipmentType;
+
         [SerializeField]
         private List<EquipableObjectPieceData> equipableObjectPieceData;
         public List<EquipableObjectPieceData> EquipableObjectPieceData => equipableObjectPieceData;

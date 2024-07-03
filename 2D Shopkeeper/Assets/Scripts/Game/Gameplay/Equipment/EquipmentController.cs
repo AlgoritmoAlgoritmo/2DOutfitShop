@@ -12,12 +12,13 @@ using Game.Gameplay.Equipment.Interfaces;
 
 
 namespace Game.Gameplay.Equipment {
+    [System.Serializable]
     public class EquipmentController : IEquipment {
         #region Variables
         [SerializeField]
-        private readonly BodyPartData[] bodyPartsData;
+        private string equipmentType = "PANTS";
         [SerializeField]
-        private readonly string equipmentType = "PANTS";
+        private BodyPartData[] bodyPartsData;
 
         private EquipableItemScriptableObject equippedItem;
         #endregion

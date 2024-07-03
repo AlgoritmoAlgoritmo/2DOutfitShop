@@ -7,15 +7,15 @@
 
 using UnityEngine;
 using UnityEngine.Events;
-using Game.Gameplay.Equipment.Interfaces;
 using Game.Gameplay.Items;
+using Game.Gameplay.Equipment.Interfaces;
 
 
 namespace Game.Gameplay.Equipment {
     public class EquipmentContainer : MonoBehaviour, IEquipment {
         #region Variables
         [SerializeField]
-        private readonly EquipmentController[] equipmentControllers;
+        private EquipmentController[] equipmentControllers;
 
         public UnityEvent<EquipableItemScriptableObject> OnEquipItem 
                                 = new UnityEvent<EquipableItemScriptableObject>();
