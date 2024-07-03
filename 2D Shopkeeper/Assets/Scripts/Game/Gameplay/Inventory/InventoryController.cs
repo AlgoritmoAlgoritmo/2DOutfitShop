@@ -7,6 +7,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Game.Gameplay.Items;
 using Game.Gameplay.Inventory.Interfaces;
 
@@ -41,6 +42,11 @@ namespace Game.Gameplay.Inventory {
 
         public List<ItemScriptableObject> GetItemsList() {
             return inventoryDataScriptableObject.GetItems();
+        }
+
+        public void SubscribeToOnItemButtonClickedEvent( 
+                                    UnityAction<ItemScriptableObject> _action ) {
+            inventoryView.OnItemButtonClicked.AddListener(_action);
         }
         #endregion
     }

@@ -34,6 +34,16 @@ namespace Game.Gameplay.Player {
         #region MonoBehaviour methods
         private void Awake() {
             equipmentContainer.Initialize();
+            inventoryController.SubscribeToOnItemButtonClickedEvent( EquipItem );
+        }
+        #endregion
+
+
+        #region Public methods
+        public void EquipItem( ItemScriptableObject _item ) {
+            if( _item is EquipableItemScriptableObject ) {
+                EquipItem( _item as EquipableItemScriptableObject );
+            }
         }
         #endregion
 
