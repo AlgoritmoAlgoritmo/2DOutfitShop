@@ -7,12 +7,13 @@
 
 using UnityEngine;
 using UnityEngine.Events;
-using Game.Gameplay.Items;
 using Game.Gameplay.Equipment.Interfaces;
+using Game.Gameplay.Equipment.Data;
 
 
 namespace Game.Gameplay.Equipment {
-    public class EquipmentContainer : MonoBehaviour, IEquipment {
+    [System.Serializable]
+    public class EquipmentContainer : IEquipment {
         #region Variables
         [SerializeField]
         private EquipmentController[] equipmentControllers;
@@ -22,16 +23,13 @@ namespace Game.Gameplay.Equipment {
         #endregion
 
 
-        #region MonoBehaviour methods
-        private void Awake() {
+        #region Public methods
+        public void Initialize() {
             foreach( var auxEquipmentController in equipmentControllers ) {
                 OnEquipItem.AddListener( auxEquipmentController.EquipItem );
             }
         }
-        #endregion
 
-
-        #region Public methods
         public void EquipItem( EquipableItemScriptableObject _equipableItem ) {
             OnEquipItem.Invoke( _equipableItem );
         }

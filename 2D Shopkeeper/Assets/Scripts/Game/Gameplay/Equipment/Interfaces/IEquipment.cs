@@ -5,7 +5,7 @@
 */
 
 
-using Game.Gameplay.Items;
+using Game.Gameplay.Equipment.Data;
 
 
 namespace Game.Gameplay.Equipment.Interfaces {

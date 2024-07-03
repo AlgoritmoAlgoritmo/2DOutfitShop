@@ -13,10 +13,8 @@ GameObject:
   - component: {fileID: 4123130277775608409}
   - component: {fileID: 5155733751975779125}
   - component: {fileID: 47349492105269650}
-  - component: {fileID: 3796604753789350773}
-  - component: {fileID: 1288490812132437324}
   - component: {fileID: 5502561926173524302}
-  - component: {fileID: 2512508364478797782}
+  - component: {fileID: 3769722011761832012}
   m_Layer: 3
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -156,37 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   actionName: Move
---- !u!114 &3796604753789350773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989104528316986509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbae5b78dae6678428ca265b29d1238d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walletDataScriptableObject: {fileID: 11400000, guid: 37c6e17adb419db4ca8dc45ea7564e0e, type: 2}
---- !u!114 &1288490812132437324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989104528316986509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6254d154d1cc01b42a4518cb42bdee50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryDataScriptableObject: {fileID: 11400000, guid: 2adc6db655bdf734c9b7141584cd991e, type: 2}
-  inventoryView:
-    inventoryPanel: {fileID: 0}
-    itemButtonPrefab: {fileID: 0}
-    icongObjectName: Icon
-    inventoryButtonsParent: {fileID: 0}
 --- !u!114 &5502561926173524302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +171,7 @@ MonoBehaviour:
   moveLeftAnimationName: Run_Left
   moveRighttAnimationName: Run_Right
   idleAnimationName: Rogue_idle_01
---- !u!114 &2512508364478797782
+--- !u!114 &3769722011761832012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,53 +180,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 8989104528316986509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 325e2231dad80b547a7867d35fe17469, type: 3}
+  m_Script: {fileID: 11500000, guid: e718ba6ec0db967458a11eb2aa4136c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equipmentControllers:
-  - equipmentType: Hood
-    bodyPartsData:
-    - bodyPartName: Hood
-      bodyPartSpriteRenderer: {fileID: 5699625563680814316}
-  - equipmentType: Face
-    bodyPartsData:
-    - bodyPartName: Face
-      bodyPartSpriteRenderer: {fileID: 5699625561265431362}
-  - equipmentType: Pants
-    bodyPartsData:
-    - bodyPartName: Leg_L
-      bodyPartSpriteRenderer: {fileID: 5699625564285953900}
-    - bodyPartName: Leg_R
-      bodyPartSpriteRenderer: {fileID: 5699625564027260562}
-  - equipmentType: Boots
-    bodyPartsData:
-    - bodyPartName: Foot_L
-      bodyPartSpriteRenderer: {fileID: 5699625562951254362}
-    - bodyPartName: Foot_R
-      bodyPartSpriteRenderer: {fileID: 5699625564027260562}
-  - equipmentType: Gloves
-    bodyPartsData:
-    - bodyPartName: Hand_L
-      bodyPartSpriteRenderer: {fileID: 5699625562791542436}
-    - bodyPartName: Hand_R
-      bodyPartSpriteRenderer: {fileID: 5699625564003101226}
-    - bodyPartName: Elbow_L
-      bodyPartSpriteRenderer: {fileID: 5699625563688564790}
-    - bodyPartName: Elbow_R
-      bodyPartSpriteRenderer: {fileID: 5699625562365095824}
-  - equipmentType: Coat
-    bodyPartsData:
-    - bodyPartName: Shoulder_L
-      bodyPartSpriteRenderer: {fileID: 5699625564077442898}
-    - bodyPartName: Shoulder_R
-      bodyPartSpriteRenderer: {fileID: 5699625563914085864}
-    - bodyPartName: Torso
-      bodyPartSpriteRenderer: {fileID: 5699625569084713560}
-    - bodyPartName: Pelvis
-      bodyPartSpriteRenderer: {fileID: 5699625561781363638}
-  OnEquipItem:
-    m_PersistentCalls:
-      m_Calls: []
+  inventoryController:
+    inventoryDataScriptableObject: {fileID: 11400000, guid: 2adc6db655bdf734c9b7141584cd991e, type: 2}
+    inventoryView:
+      inventoryPanel: {fileID: 0}
+      itemButtonPrefab: {fileID: 6165189253347682367, guid: 96405c26a0025e54ea1a1dc22f62c04d, type: 3}
+      icongObjectName: Icon
+      inventoryButtonsParent: {fileID: 0}
+  equipmentContainer:
+    equipmentControllers:
+    - equipmentType: Hood
+      bodyPartsData:
+      - bodyPartName: Hood
+        bodyPartSpriteRenderer: {fileID: 5699625563680814316}
+    OnEquipItem:
+      m_PersistentCalls:
+        m_Calls: []
+  walletController:
+    walletDataScriptableObject: {fileID: 11400000, guid: 37c6e17adb419db4ca8dc45ea7564e0e, type: 2}
 --- !u!1001 &5613754128333063840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -339,68 +280,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010141028922, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
   m_PrefabInstance: {fileID: 5613754128333063840}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625561265431362 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000010938263010, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625561781363638 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000011487683862, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625562365095824 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000012109687088, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625562791542436 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000012496812036, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625562951254362 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000012742084602, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!212 &5699625563680814316 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 212000013352628812, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625563688564790 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013478837910, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625563914085864 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013658186568, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625564003101226 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013693168778, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625564027260562 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013804914738, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625564077442898 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013754991090, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625564285953900 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000013957669324, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
-  m_PrefabInstance: {fileID: 5613754128333063840}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5699625569084713560 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
   m_PrefabInstance: {fileID: 5613754128333063840}
   m_PrefabAsset: {fileID: 0}

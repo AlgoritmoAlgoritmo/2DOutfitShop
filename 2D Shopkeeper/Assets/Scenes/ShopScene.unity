@@ -325,14 +325,14 @@ PrefabInstance:
     - target: {fileID: 7539061230421496326, guid: 8e7ce927a3e92f349a2affcfcde2d5d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1199859128}
+      objectReference: {fileID: 1199859136}
     - target: {fileID: 7539061230421496326, guid: 8e7ce927a3e92f349a2affcfcde2d5d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseInventory
       objectReference: {fileID: 0}
     - target: {fileID: 7539061230421496326, guid: 8e7ce927a3e92f349a2affcfcde2d5d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Game.Gameplay.Inventory.InventoryController, Assembly-CSharp
+      value: Game.Gameplay.Player.PlayerFacade, _Game.Gameplay.Player
       objectReference: {fileID: 0}
     - target: {fileID: 8890838703989158318, guid: 8e7ce927a3e92f349a2affcfcde2d5d0, type: 3}
       propertyPath: m_Name
@@ -1178,8 +1178,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1199859128}
-        m_TargetAssemblyTypeName: Game.Gameplay.Inventory.InventoryController, Assembly-CSharp
+      - m_Target: {fileID: 1199859136}
+        m_TargetAssemblyTypeName: Game.Gameplay.Player.PlayerFacade, _Game.Gameplay.Player
         m_MethodName: OpenInventory
         m_Mode: 1
         m_Arguments:
@@ -1560,15 +1560,15 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1199859128 stripped
+--- !u!114 &1199859136 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1288490812132437324, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3769722011761832012, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
   m_PrefabInstance: {fileID: 1192496047788494333}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6254d154d1cc01b42a4518cb42bdee50, type: 3}
+  m_Script: {fileID: 11500000, guid: e718ba6ec0db967458a11eb2aa4136c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1202014885
@@ -2394,6 +2394,14 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3769722011761832012, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
+      propertyPath: inventoryController.inventoryView.inventoryPanel
+      value: 
+      objectReference: {fileID: 716330612048115648}
+    - target: {fileID: 3769722011761832012, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
+      propertyPath: inventoryController.inventoryView.inventoryButtonsParent
+      value: 
+      objectReference: {fileID: 6923833606844643987}
     - target: {fileID: 4123130277775608409, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 10.24
@@ -2454,7 +2462,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1288490812132437324, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

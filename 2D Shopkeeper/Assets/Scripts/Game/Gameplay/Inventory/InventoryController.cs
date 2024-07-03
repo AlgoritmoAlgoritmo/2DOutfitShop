@@ -12,7 +12,8 @@ using Game.Gameplay.Inventory.Interfaces;
 
 
 namespace Game.Gameplay.Inventory {
-    public class InventoryController : MonoBehaviour, IInventory {
+    [System.Serializable]
+    public class InventoryController : IInventory {
         #region Variables
         [SerializeField]
         private InventoryDataScriptableObject inventoryDataScriptableObject;
@@ -34,7 +35,6 @@ namespace Game.Gameplay.Inventory {
             inventoryDataScriptableObject.AddItem(_item);
         }
 
-
         public void RemoveItem( ItemScriptableObject _item ) {
             inventoryDataScriptableObject.RemoveItem( _item );
         }
@@ -42,10 +42,6 @@ namespace Game.Gameplay.Inventory {
         public List<ItemScriptableObject> GetItemsList() {
             return inventoryDataScriptableObject.GetItems();
         }
-        #endregion
-
-        #region Protected methods
-
         #endregion
     }
 }

@@ -2,7 +2,11 @@
     "name": "_Game.Gameplay.Player",
     "rootNamespace": "",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:d8299efebb219c84594b5878138665cd",
+        "GUID:e51f8e8478bfdd94d9931e614e17ee6e",
+        "GUID:7c7d70f38796ca947a1200d6c92630f9",
+        "GUID:faac1a006783c074683cdcc462b24149"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
