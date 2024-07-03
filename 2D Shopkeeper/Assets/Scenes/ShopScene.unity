@@ -1560,39 +1560,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1199859121 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8989104528316986509, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
-  m_PrefabInstance: {fileID: 1192496047788494333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1199859128 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1288490812132437324, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
   m_PrefabInstance: {fileID: 1192496047788494333}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199859121}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6254d154d1cc01b42a4518cb42bdee50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1199859137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199859121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64aaaf44ae51883448500bcb53a24e19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1732507241}
-  actionName: Move
-  moveLeftAnimationName: Run_Left
-  moveRighttAnimationName: Run_Right
-  idleAnimationName: Rogue_idle_01
 --- !u!1 &1202014885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,11 +2143,6 @@ Transform:
   - {fileID: 1456629482}
   m_Father: {fileID: 2134287288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1732507241 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5528605740393825762, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
-  m_PrefabInstance: {fileID: 1192496047788494333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1771882477 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8084122602108263551, guid: f550bcbb084e9444196b21a5c56d2c59, type: 3}
@@ -2484,10 +2457,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8989104528316986509, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1199859137}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939febe03b80bb4438ffa13b548f2c75, type: 3}
 --- !u!224 &2001827067258553360
 RectTransform:

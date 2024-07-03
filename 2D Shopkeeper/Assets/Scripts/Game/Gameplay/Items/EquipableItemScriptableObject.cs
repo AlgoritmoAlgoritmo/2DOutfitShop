@@ -5,6 +5,7 @@
 */
 
 
+using Game.Gameplay.Equipment.Data;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,8 +17,8 @@ namespace Game.Gameplay.Items {
     public class EquipableItemScriptableObject : ItemScriptableObject {
         #region Variables
         [SerializeField]
-        private GameObject itemPrefab;
-        public GameObject ItemPrefab => itemPrefab;
+        private List<EquipableObjectPieceData> equipableObjectPieceData;
+        public List<EquipableObjectPieceData> EquipableObjectPieceData => equipableObjectPieceData;
         #endregion
     }
 }
