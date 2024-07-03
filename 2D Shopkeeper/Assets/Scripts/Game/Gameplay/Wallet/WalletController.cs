@@ -5,14 +5,13 @@
 */
 
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Game.Gameplay.Wallet.Interfaces;
 
 
 namespace Game.Gameplay.Wallet {
-    public class WalletController : MonoBehaviour, IWallet {
+    [System.Serializable]
+    public class WalletController : IWallet {
         #region Variables
         [SerializeField]
         private WalletDataScriptableObject walletDataScriptableObject;

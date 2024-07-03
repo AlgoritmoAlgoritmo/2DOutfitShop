@@ -1,0 +1,16 @@
+{
+    "name": "_Game.Gameplay.Inventory",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e51f8e8478bfdd94d9931e614e17ee6e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
