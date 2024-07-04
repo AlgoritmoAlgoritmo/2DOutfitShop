@@ -7,9 +7,11 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Game.Gameplay.Items;
 using Game.Gameplay.UI.Shop;
 using Game.Gameplay.Inventory.Interfaces;
+using UnityEngine.Events;
 
 namespace Game.Gameplay.Shop {
     [System.Serializable]
@@ -19,6 +21,9 @@ namespace Game.Gameplay.Shop {
         private Transform buttonParent;
         [SerializeField]
         private InventoryButtonView buttonPrefab;
+
+        public UnityEvent<ItemScriptableObject> OnButtonPressed 
+                                = new UnityEvent<ItemScriptableObject>();
 
 
         private List<GameObject> buttonsInstances = new List<GameObject>();
@@ -37,7 +42,7 @@ namespace Game.Gameplay.Shop {
         }
 
         public void HideInventory() {
-            // Not implemented due to a lack of use
+            // Intentionally not implemented due to a lack of use
             throw new System.NotImplementedException();
         }
         #endregion
@@ -63,6 +68,14 @@ namespace Game.Gameplay.Shop {
             InventoryButtonView instance = GameObject.Instantiate( buttonPrefab, buttonParent );
 
             instance.Configure( _item.ItemSprite );
+
+            try {
+                instance.GetComponent<Button>().onClick.AddListener( delegate { 
+                                                            OnButtonPressed.Invoke( _item ); } );
+
+            } catch ( System.NullReferenceException ) {
+                Debug.Log( "Make sure there is a Button cumponent in the inventory button prefab." );
+            }
 
             return instance.gameObject;
         }        

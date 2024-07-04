@@ -57,7 +57,7 @@ namespace Game.Gameplay.Shop {
 
         public void SellItemToPlayer( ItemScriptableObject _item ) {
             try {
-                currentWallet.RemoveMoney( _item.ItemPrice );
+                currentWallet.RemoveMoney( _item.ItemBuyPrice );
 
                 try {
                     currentInventory.AddItem( _item );
@@ -65,7 +65,7 @@ namespace Game.Gameplay.Shop {
 
                 // if _item cannot be added, return money to player
                 } catch ( System.IndexOutOfRangeException ) {
-                    currentWallet.AddMoney( _item.ItemPrice );
+                    currentWallet.AddMoney( _item.ItemBuyPrice );
                     // TO DO: Display error message
                     Debug.Log( "_item cannot be added, return money to player" );
                 }
@@ -76,6 +76,24 @@ namespace Game.Gameplay.Shop {
                 Debug.Log( "player doesn't have enough money" );
             }
         }
+        
+        public void BuyItemFromPlayer( ItemScriptableObject _item ) {
+            try {
+                currentInventory.RemoveItem( _item );
+                currentWallet.AddMoney( _item.ItemSellPrice );
+                RefreshView();
+                /*
+            // if the _item intended to be removed doesn not exist in the inventory
+            } catch( System.NullReferenceException ) {
+                // TO DO: Display error message
+                Debug.Log( "The item does not exist in the inventory." );
+                */
+            // if inventory is already empty
+            } catch( System.InvalidOperationException ) {
+                // TO DO: Display error message
+                Debug.Log( "Inventory is empty. Can't remove any items." );
+            }
+        }
         #endregion
 
 
@@ -84,9 +102,11 @@ namespace Game.Gameplay.Shop {
             foreach( var auxItem in itemDatabase.Items ) {
                 outfitShopView.AddNewButton( auxItem.ItemSprite,
                                             auxItem.ItemName,
-                                            auxItem.ItemPrice.ToString(),
+                                            auxItem.ItemBuyPrice.ToString(),
                                             delegate { SellItemToPlayer( auxItem ); } );
             }
+
+            shopInventoryView.OnButtonPressed.AddListener( BuyItemFromPlayer );
         }
 
         private void RefreshView() {

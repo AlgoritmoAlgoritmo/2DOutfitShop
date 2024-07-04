@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 03- Hood EquipableItem ScriptableObject
   m_EditorClassIdentifier: 
   itemName: Hood 03
-  itemPrice: 20
+  itemBuyPrice: 20
+  itemSellPrice: 10
   itemSprite: {fileID: 21300000, guid: be1d827c5c15e4c479172581fd28cb64, type: 3}
   equipmentType: Hood
   equipableObjectPieceData:
