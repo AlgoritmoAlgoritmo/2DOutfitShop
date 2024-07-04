@@ -88,9 +88,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3849228033067560886, guid: 96405c26a0025e54ea1a1dc22f62c04d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849228033067560886, guid: 96405c26a0025e54ea1a1dc22f62c04d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849228033067560886, guid: 96405c26a0025e54ea1a1dc22f62c04d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7882353
+      objectReference: {fileID: 0}
     - target: {fileID: 6165189253347682367, guid: 96405c26a0025e54ea1a1dc22f62c04d, type: 3}
       propertyPath: m_Name
-      value: InventoryItemButton Variant
+      value: Shop InventoryItemButton Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

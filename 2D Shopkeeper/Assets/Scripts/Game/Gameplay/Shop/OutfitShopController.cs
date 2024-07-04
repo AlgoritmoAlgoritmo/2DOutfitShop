@@ -10,6 +10,7 @@ using UnityEngine;
 using Game.Gameplay.Items;
 using Game.Gameplay.Wallet.Interfaces;
 using Game.Gameplay.Inventory.Interfaces;
+using Game.Gameplay.Wallet;
 
 
 
@@ -22,6 +23,8 @@ namespace Game.Gameplay.Shop {
         private OutfitShopView outfitShopView;
         [SerializeField]
         private ShopInventoryView shopInventoryView;
+        [SerializeField]
+        private WalletView walletView;
 
         private IWallet currentWallet;
         private IInventory currentInventory;
@@ -41,7 +44,7 @@ namespace Game.Gameplay.Shop {
             currentWallet = _gameObject.GetComponent<IWallet>();
             currentInventory = _gameObject.GetComponent<IInventory>();
 
-            shopInventoryView.Refresh( currentInventory.GetItemsList() );
+            RefreshView();
         }
 
         public void DisplayView() {
@@ -58,7 +61,7 @@ namespace Game.Gameplay.Shop {
 
                 try {
                     currentInventory.AddItem( _item );
-                    shopInventoryView.Refresh( currentInventory.GetItemsList() );
+                    RefreshView();
 
                 // if _item cannot be added, return money to player
                 } catch ( System.IndexOutOfRangeException ) {
@@ -84,6 +87,11 @@ namespace Game.Gameplay.Shop {
                                             auxItem.ItemPrice.ToString(),
                                             delegate { SellItemToPlayer( auxItem ); } );
             }
+        }
+
+        private void RefreshView() {
+            shopInventoryView.Refresh( currentInventory.GetItemsList() );
+            walletView.RefreshWalletView( currentWallet.GetCurrentAmount() );
         }
         #endregion
     }

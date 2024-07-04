@@ -5,11 +5,6 @@
 */
 
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
 namespace Game.Gameplay.Wallet.Interfaces {
     public interface IWallet {
         #region Public methods
