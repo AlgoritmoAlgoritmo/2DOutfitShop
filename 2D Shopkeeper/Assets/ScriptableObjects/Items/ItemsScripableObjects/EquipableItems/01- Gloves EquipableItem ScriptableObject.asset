@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715cc3320ac72774589afe267aae5d1b, type: 3}
+  m_Name: 01- Gloves EquipableItem ScriptableObject
+  m_EditorClassIdentifier: 
+  itemName: Gloves 01
+  itemBuyPrice: 5
+  itemSellPrice: 1
+  itemSprite: {fileID: 21300000, guid: fd3e6f740ad01d7499cc55ca997a55f8, type: 3}
+  equipmentType: Gloves
+  equipableObjectPieceData:
+  - bodyPartName: Hand_L
+    itemSprite: {fileID: 21300000, guid: 0d8396fbd3e20f941b37c1cb7829a2e8, type: 3}
+  - bodyPartName: Hand_R
+    itemSprite: {fileID: 21300000, guid: 661842e23ba86e34abbf52c56c321411, type: 3}
+  - bodyPartName: Elbow_L
+    itemSprite: {fileID: 21300000, guid: 48ecbe245379f214497aae538fe1d4f3, type: 3}
+  - bodyPartName: Elbow_R
+    itemSprite: {fileID: 21300000, guid: ece48dca5e286fd48b5dc0633b08b15d, type: 3}

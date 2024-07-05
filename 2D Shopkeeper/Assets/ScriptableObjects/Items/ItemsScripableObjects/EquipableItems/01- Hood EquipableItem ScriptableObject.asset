@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Hood 01
   itemBuyPrice: 5
   itemSellPrice: 1
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 786190c4687206b409fe7498706e7721, type: 3}
   equipmentType: Hood
   equipableObjectPieceData:
   - bodyPartName: Hood
