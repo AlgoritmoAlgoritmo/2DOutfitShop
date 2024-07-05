@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4123130277775608409}
   - component: {fileID: 5155733751975779125}
   - component: {fileID: 47349492105269650}
-  - component: {fileID: 5502561926173524302}
   - component: {fileID: 3769722011761832012}
+  - component: {fileID: 6827935571934546865}
   m_Layer: 3
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -154,23 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   actionName: Move
---- !u!114 &5502561926173524302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989104528316986509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64aaaf44ae51883448500bcb53a24e19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5528605740393825762}
-  actionName: Move
-  moveLeftAnimationName: Run_Left
-  moveRighttAnimationName: Run_Right
-  idleAnimationName: Rogue_idle_01
 --- !u!114 &3769722011761832012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +223,25 @@ MonoBehaviour:
         m_Calls: []
   walletController:
     walletDataScriptableObject: {fileID: 11400000, guid: 37c6e17adb419db4ca8dc45ea7564e0e, type: 2}
+    walletView:
+      moneyAmountDisplayText: {fileID: 0}
+--- !u!114 &6827935571934546865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989104528316986509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adebaa693e5b5e24689d7e7f1c343dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5528605740393825762}
+  actionName: Move
+  leftTriggerName: leftTrigger
+  rightTriggerName: rightTrigger
+  idleTrigger: idleTrigger
 --- !u!1001 &5613754128333063840
 PrefabInstance:
   m_ObjectHideFlags: 0
