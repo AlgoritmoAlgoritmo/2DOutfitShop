@@ -18,8 +18,12 @@ namespace Game.Gameplay.Items {
         public string ItemName => itemName;
 
         [SerializeField]
-        private int itemPrice;
-        public int ItemPrice => itemPrice;
+        private int itemBuyPrice;
+        public int ItemBuyPrice => itemBuyPrice;
+        [SerializeField]
+        private int itemSellPrice;
+        public int ItemSellPrice => itemSellPrice;
+
         [SerializeField]
         private Sprite itemSprite;
         public Sprite ItemSprite => itemSprite;

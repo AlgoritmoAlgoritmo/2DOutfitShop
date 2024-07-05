@@ -22,6 +22,8 @@ namespace Other {
         private WalletDataScriptableObject wallet;
         [SerializeField]
         private ItemDatabaseScriptableObject playerItems;
+        [SerializeField]
+        private ItemDatabaseScriptableObject starterPlayerInvenyotyData;
         #endregion
 
         #region MonoBehaviour methods
@@ -37,7 +39,12 @@ namespace Other {
         #region Private methods
         private void ResetData() {
             wallet.MoneyAmount = starterAmountOfMoney;
-            playerItems.Items = new List<ItemScriptableObject>();
+
+            playerItems.Items.Clear();
+
+            foreach( var auxItem in starterPlayerInvenyotyData.Items ) {
+                playerItems.AddItem( auxItem );
+            }
         }
         #endregion
     }

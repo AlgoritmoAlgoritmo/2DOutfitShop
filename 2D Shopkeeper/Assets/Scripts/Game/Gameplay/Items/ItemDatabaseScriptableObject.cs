@@ -29,6 +29,10 @@ namespace Game.Gameplay.Items {
         public void RemoveItem( ItemScriptableObject _item ) {
             items.Remove( _item );
         }
+
+        public bool ContainsItem( ItemScriptableObject _item ) {
+            return items.Contains( _item );
+        }
         #endregion
     }
 }

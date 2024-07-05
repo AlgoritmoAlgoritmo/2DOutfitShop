@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: OutfitShop ItemDatabase
   m_EditorClassIdentifier: 
   items:
+  - {fileID: 11400000, guid: 6e3beaf0460a591409ac959ca79ade7f, type: 2}
+  - {fileID: 11400000, guid: bad40a6ba0de1a54e9baa0d4a3ff665e, type: 2}
+  - {fileID: 11400000, guid: f206211123ae6b246a654701022cb3e1, type: 2}
   - {fileID: 11400000, guid: 51c38902b2622f545b9fae5a7026ae6a, type: 2}
+  - {fileID: 11400000, guid: 88e6bd00cb9c08449b17decee5d3d665, type: 2}

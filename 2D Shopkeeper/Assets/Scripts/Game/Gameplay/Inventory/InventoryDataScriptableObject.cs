@@ -28,11 +28,14 @@ namespace Game.Gameplay.Inventory {
             itemDatabase.AddItem( item );
         }
 
-        public void RemoveItem( ItemScriptableObject item ) {
+        public void RemoveItem( ItemScriptableObject _item ) {
             if( itemDatabase.Items.Count <= 0 )
                 throw new System.IndexOutOfRangeException( "Inventory is already empty." );
 
-            itemDatabase.RemoveItem( item );
+            if( !itemDatabase.ContainsItem( _item ) )
+                throw new System.NullReferenceException( "Item not found in inventory." );
+
+            itemDatabase.RemoveItem( _item );
         }
 
         public List<ItemScriptableObject> GetItems() {

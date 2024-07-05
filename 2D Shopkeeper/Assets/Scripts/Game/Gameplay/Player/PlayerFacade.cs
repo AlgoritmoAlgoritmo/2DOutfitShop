@@ -34,6 +34,7 @@ namespace Game.Gameplay.Player {
         #region MonoBehaviour methods
         private void Awake() {
             equipmentContainer.Initialize();
+            walletController.Initialize();
             inventoryController.SubscribeToOnItemButtonClickedEvent( EquipItem );
         }
         #endregion

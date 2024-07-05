@@ -6,7 +6,6 @@
 
 
 using UnityEngine;
-using Game.Gameplay.Items;
 using Game.Gameplay.Equipment.Data;
 using Game.Gameplay.Equipment.Interfaces;
 
@@ -26,15 +25,17 @@ namespace Game.Gameplay.Equipment {
 
         #region Public methods
         public void EquipItem( EquipableItemScriptableObject _equipableItem ) {
-            UnequipItem();
-            equippedItem = _equipableItem;
+            if( _equipableItem.EquipmentType.Equals( equipmentType ) ) {
+                UnequipItem();
+                equippedItem = _equipableItem;
 
-            foreach( var auxEquipableObjectPieceData in equippedItem.EquipableObjectPieceData ) {
-                foreach( var auxBodyPartData in bodyPartsData ) {
-                    if( auxEquipableObjectPieceData.BodyPartName.Equals( auxBodyPartData.BodyPartName ) ) {
-                        auxBodyPartData.BodyPartSpriteRenderer.sprite = auxEquipableObjectPieceData
-                                                                                        .ItemSprite;
-                        continue;
+                foreach( var auxEquipableObjectPieceData in equippedItem.EquipableObjectPieceData ) {
+                    foreach( var auxBodyPartData in bodyPartsData ) {
+                        if( auxEquipableObjectPieceData.BodyPartName.Equals( auxBodyPartData.BodyPartName ) ) {
+                            auxBodyPartData.BodyPartSpriteRenderer.sprite = auxEquipableObjectPieceData
+                                                                                            .ItemSprite;
+                            continue;
+                        }
                     }
                 }
             }

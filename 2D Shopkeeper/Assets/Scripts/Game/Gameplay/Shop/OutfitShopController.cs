@@ -10,6 +10,7 @@ using UnityEngine;
 using Game.Gameplay.Items;
 using Game.Gameplay.Wallet.Interfaces;
 using Game.Gameplay.Inventory.Interfaces;
+using Game.Gameplay.Wallet;
 
 
 
@@ -22,6 +23,8 @@ namespace Game.Gameplay.Shop {
         private OutfitShopView outfitShopView;
         [SerializeField]
         private ShopInventoryView shopInventoryView;
+        [SerializeField]
+        private WalletView walletView;
 
         private IWallet currentWallet;
         private IInventory currentInventory;
@@ -41,7 +44,7 @@ namespace Game.Gameplay.Shop {
             currentWallet = _gameObject.GetComponent<IWallet>();
             currentInventory = _gameObject.GetComponent<IInventory>();
 
-            shopInventoryView.Refresh( currentInventory.GetItemsList() );
+            RefreshView();
         }
 
         public void DisplayView() {
@@ -54,15 +57,15 @@ namespace Game.Gameplay.Shop {
 
         public void SellItemToPlayer( ItemScriptableObject _item ) {
             try {
-                currentWallet.RemoveMoney( _item.ItemPrice );
+                currentWallet.RemoveMoney( _item.ItemBuyPrice );
 
                 try {
                     currentInventory.AddItem( _item );
-                    shopInventoryView.Refresh( currentInventory.GetItemsList() );
+                    RefreshView();
 
                 // if _item cannot be added, return money to player
                 } catch ( System.IndexOutOfRangeException ) {
-                    currentWallet.AddMoney( _item.ItemPrice );
+                    currentWallet.AddMoney( _item.ItemBuyPrice );
                     // TO DO: Display error message
                     Debug.Log( "_item cannot be added, return money to player" );
                 }
@@ -73,6 +76,24 @@ namespace Game.Gameplay.Shop {
                 Debug.Log( "player doesn't have enough money" );
             }
         }
+        
+        public void BuyItemFromPlayer( ItemScriptableObject _item ) {
+            try {
+                currentInventory.RemoveItem( _item );
+                currentWallet.AddMoney( _item.ItemSellPrice );
+                RefreshView();
+                /*
+            // if the _item intended to be removed doesn not exist in the inventory
+            } catch( System.NullReferenceException ) {
+                // TO DO: Display error message
+                Debug.Log( "The item does not exist in the inventory." );
+                */
+            // if inventory is already empty
+            } catch( System.InvalidOperationException ) {
+                // TO DO: Display error message
+                Debug.Log( "Inventory is empty. Can't remove any items." );
+            }
+        }
         #endregion
 
 
@@ -81,9 +102,16 @@ namespace Game.Gameplay.Shop {
             foreach( var auxItem in itemDatabase.Items ) {
                 outfitShopView.AddNewButton( auxItem.ItemSprite,
                                             auxItem.ItemName,
-                                            auxItem.ItemPrice.ToString(),
+                                            auxItem.ItemBuyPrice.ToString(),
                                             delegate { SellItemToPlayer( auxItem ); } );
             }
+
+            shopInventoryView.OnButtonPressed.AddListener( BuyItemFromPlayer );
+        }
+
+        private void RefreshView() {
+            shopInventoryView.Refresh( currentInventory.GetItemsList() );
+            walletView.RefreshWalletView( currentWallet.GetCurrentAmount() );
         }
         #endregion
     }
