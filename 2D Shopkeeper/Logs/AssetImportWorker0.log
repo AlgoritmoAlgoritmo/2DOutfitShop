@@ -15,7 +15,7 @@ C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51400
+62427
 Successfully changed project path to: C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
 C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Usuario/Documents/GitHub/2DOutfitShop/2D Shopkeeper
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21632] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 833512161 [EditorId] 833512161 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [32344] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 1527600092 [EditorId] 1527600092 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21632] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 833512161 [EditorId] 833512161 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [32344] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 1527600092 [EditorId] 1527600092 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-7NK7EKN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 444.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 10369.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.25f1 (530ae0ba3889)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -71,46 +71,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.506533 seconds.
-- Loaded All Assemblies, in  7.524 seconds
+Registered in 0.035696 seconds.
+- Loaded All Assemblies, in 21.048 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.489 seconds
-Domain Reload Profiling: 11996ms
-	BeginReloadAssembly (4780ms)
+- Finished resetting the current domain, in  1.617 seconds
+Domain Reload Profiling: 22660ms
+	BeginReloadAssembly (18957ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (6ms)
-	RebuildCommonClasses (213ms)
-	RebuildNativeTypeToScriptingClass (53ms)
-	initialDomainReloadingComplete (887ms)
-	LoadAllAssembliesAndSetupDomain (1570ms)
-		LoadAssemblies (4757ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (140ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (248ms)
+	LoadAllAssembliesAndSetupDomain (1649ms)
+		LoadAssemblies (18950ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1558ms)
-			TypeCache.Refresh (1549ms)
-				TypeCache.ScanAssembly (1414ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
+		AnalyzeDomain (1642ms)
+			TypeCache.Refresh (1637ms)
+				TypeCache.ScanAssembly (1589ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (4492ms)
+	FinalizeReload (1619ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3985ms)
+		SetupLoadedEditorAssemblies (1238ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (106ms)
-			SetLoadedEditorAssemblies (602ms)
+			InitializePlatformSupportModulesInManaged (61ms)
+			SetLoadedEditorAssemblies (34ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (1930ms)
-			ProcessInitializeOnLoadMethodAttributes (1131ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (915ms)
+			ProcessInitializeOnLoadMethodAttributes (218ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
@@ -118,8 +118,8 @@ Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly defin
 Worker process is ready to serve import requests
 Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 39.769 seconds
-Refreshing native plugins compatible for Editor in 390.35 ms, found 4 plugins.
+- Loaded All Assemblies, in 13.864 seconds
+Refreshing native plugins compatible for Editor in 147.68 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -127,433 +127,203 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 10.847 seconds
-Domain Reload Profiling: 50589ms
-	BeginReloadAssembly (1409ms)
+- Finished resetting the current domain, in  9.269 seconds
+Domain Reload Profiling: 23111ms
+	BeginReloadAssembly (2768ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (250ms)
+		DisableScriptedObjects (33ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (115ms)
-	RebuildCommonClasses (390ms)
-	RebuildNativeTypeToScriptingClass (144ms)
-	initialDomainReloadingComplete (363ms)
-	LoadAllAssembliesAndSetupDomain (37433ms)
-		LoadAssemblies (34819ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (257ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (434ms)
+	LoadAllAssembliesAndSetupDomain (10318ms)
+		LoadAssemblies (11556ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3267ms)
-			TypeCache.Refresh (2822ms)
-				TypeCache.ScanAssembly (2626ms)
-			ScanForSourceGeneratedMonoScriptInfo (312ms)
-			ResolveRequiredComponents (128ms)
-	FinalizeReload (10849ms)
+		AnalyzeDomain (1162ms)
+			TypeCache.Refresh (928ms)
+				TypeCache.ScanAssembly (871ms)
+			ScanForSourceGeneratedMonoScriptInfo (181ms)
+			ResolveRequiredComponents (50ms)
+	FinalizeReload (9272ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (8300ms)
+		SetupLoadedEditorAssemblies (7519ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (53ms)
-			SetLoadedEditorAssemblies (58ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (120ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1515ms)
-			ProcessInitializeOnLoadAttributes (5718ms)
-			ProcessInitializeOnLoadMethodAttributes (899ms)
-			AfterProcessingInitializeOnLoad (56ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (43ms)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 4.63 seconds
-Refreshing native plugins compatible for Editor in 42.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6695 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (71.8 MB). Loaded Objects now: 7136.
-Memory consumption went from 326.5 MB to 254.7 MB.
-Total: 48.980600 ms (FindLiveObjects: 6.555800 ms CreateObjectMapping: 2.514900 ms MarkObjects: 18.058600 ms  DeleteObjects: 21.845100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 251586.154688 seconds.
-  path: Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller
-  artifactKey: Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller using Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9efb597288262232622b5a82598edf') in 1.014632 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 78.725327 seconds.
-  path: Assets/Scripts/Game/Gameplay/Player/Animations/PlayerAnimationsPlayedByTriggerController.cs
-  artifactKey: Guid(adebaa693e5b5e24689d7e7f1c343dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/Gameplay/Player/Animations/PlayerAnimationsPlayedByTriggerController.cs using Guid(adebaa693e5b5e24689d7e7f1c343dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1167a09c6e26acb74bf47302232f333') in 0.001660 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.811821 seconds.
-  path: Assets/Scripts/Game/Gameplay/Player/Animations/PlayerAnimationsPlayedByNameController.cs
-  artifactKey: Guid(64aaaf44ae51883448500bcb53a24e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/Gameplay/Player/Animations/PlayerAnimationsPlayedByNameController.cs using Guid(64aaaf44ae51883448500bcb53a24e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172d4f6f7623b77da85bfec110a2791e') in 0.003003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 144.351189 seconds.
-  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_01.anim
-  artifactKey: Guid(865c140a357820b40a1ca2a46ff9903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_01.anim using Guid(865c140a357820b40a1ca2a46ff9903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b842b9c57bb69630fd8fbbf79429e39') in 0.068804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 7.080570 seconds.
-  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_01 1.anim
-  artifactKey: Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_01 1.anim using Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca27f4540f8cee97fd2784ff05b57a29') in 0.014870 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 12.147051 seconds.
-  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_K.anim
-  artifactKey: Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_K.anim using Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2671702c0742c3d2eaeadec9c8ccae33') in 0.009503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 3.561254 seconds.
-  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_L.anim
-  artifactKey: Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_idle_L.anim using Guid(16d4ae54c6d91754086c8e0d9cead150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464f662d0cd05752d85731f8f9e69227') in 0.015955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 14.196604 seconds.
-  path: Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller
-  artifactKey: Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller using Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e82837e3c1a86a9e6e50a13c81cbf4c') in 0.123067 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 703.573130 seconds.
-  path: Assets/Scripts/Game/Gameplay/Player/Animations
-  artifactKey: Guid(6b48a884d8a4c3247ac8a32608dc2086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/Gameplay/Player/Animations using Guid(6b48a884d8a4c3247ac8a32608dc2086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c5768086fc038270a5a82238524a6c') in 0.025294 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 82.430688 seconds.
-  path: Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller
-  artifactKey: Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller using Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca7840a6c694a6e1124392626c69ccc') in 0.514518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Prepare
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 21.675 seconds
-Refreshing native plugins compatible for Editor in 54.78 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 210.324 seconds
-Domain Reload Profiling: 231959ms
-	BeginReloadAssembly (1818ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (266ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (310ms)
-	RebuildCommonClasses (1260ms)
-	RebuildNativeTypeToScriptingClass (96ms)
-	initialDomainReloadingComplete (334ms)
-	LoadAllAssembliesAndSetupDomain (18124ms)
-		LoadAssemblies (18935ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (199ms)
-			TypeCache.Refresh (40ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (153ms)
-	FinalizeReload (210326ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3731ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (33ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (714ms)
-			ProcessInitializeOnLoadAttributes (2489ms)
-			ProcessInitializeOnLoadMethodAttributes (418ms)
-			AfterProcessingInitializeOnLoad (45ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (77ms)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 32.62 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6540 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (71.6 MB). Loaded Objects now: 7155.
-Memory consumption went from 300.5 MB to 229.0 MB.
-Total: 100.011000 ms (FindLiveObjects: 4.051200 ms CreateObjectMapping: 4.632800 ms MarkObjects: 64.548500 ms  DeleteObjects: 26.773000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 21.801 seconds
-Refreshing native plugins compatible for Editor in 20.57 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 265.788 seconds
-Domain Reload Profiling: 287530ms
-	BeginReloadAssembly (6830ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (67ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1361ms)
-	RebuildCommonClasses (437ms)
-	RebuildNativeTypeToScriptingClass (211ms)
-	initialDomainReloadingComplete (490ms)
-	LoadAllAssembliesAndSetupDomain (13771ms)
-		LoadAssemblies (18806ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (22ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (83ms)
-	FinalizeReload (265790ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (9716ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (139ms)
-			SetLoadedEditorAssemblies (48ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2060ms)
-			ProcessInitializeOnLoadAttributes (6868ms)
-			ProcessInitializeOnLoadMethodAttributes (556ms)
-			AfterProcessingInitializeOnLoad (44ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (81ms)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 56.71 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6540 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (71.6 MB). Loaded Objects now: 7172.
-Memory consumption went from 302.4 MB to 230.9 MB.
-Total: 57.217000 ms (FindLiveObjects: 2.838000 ms CreateObjectMapping: 1.439900 ms MarkObjects: 19.035700 ms  DeleteObjects: 33.897200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 15.229 seconds
-Refreshing native plugins compatible for Editor in 37.73 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 122.069 seconds
-Domain Reload Profiling: 137177ms
-	BeginReloadAssembly (921ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (54ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (194ms)
-	RebuildCommonClasses (188ms)
-	RebuildNativeTypeToScriptingClass (56ms)
-	initialDomainReloadingComplete (215ms)
-	LoadAllAssembliesAndSetupDomain (13725ms)
-		LoadAssemblies (14112ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (164ms)
-			TypeCache.Refresh (31ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (129ms)
-	FinalizeReload (122072ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4434ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (36ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (840ms)
-			ProcessInitializeOnLoadAttributes (3043ms)
-			ProcessInitializeOnLoadMethodAttributes (427ms)
-			AfterProcessingInitializeOnLoad (48ms)
+			BeforeProcessingInitializeOnLoad (874ms)
+			ProcessInitializeOnLoadAttributes (5695ms)
+			ProcessInitializeOnLoadMethodAttributes (746ms)
+			AfterProcessingInitializeOnLoad (47ms)
 			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (135ms)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+		AwakeInstancesAfterBackupRestoration (349ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 47.40 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.97 seconds
+Refreshing native plugins compatible for Editor in 30.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6540 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (71.6 MB). Loaded Objects now: 7189.
-Memory consumption went from 304.4 MB to 232.8 MB.
-Total: 86.080900 ms (FindLiveObjects: 4.452700 ms CreateObjectMapping: 2.536300 ms MarkObjects: 55.069500 ms  DeleteObjects: 24.015800 ms)
+Unloading 6261 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (424.1 KB). Loaded Objects now: 6720.
+Memory consumption went from 235.4 MB to 235.0 MB.
+Total: 15.526600 ms (FindLiveObjects: 2.051600 ms CreateObjectMapping: 1.177500 ms MarkObjects: 11.020000 ms  DeleteObjects: 1.273100 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.454 seconds
-Refreshing native plugins compatible for Editor in 19.42 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Assets/Scripts/Game/_Game.asmref has no target assembly definition
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  8.920 seconds
-Domain Reload Profiling: 13343ms
-	BeginReloadAssembly (1167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (98ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (317ms)
-	RebuildCommonClasses (321ms)
-	RebuildNativeTypeToScriptingClass (90ms)
-	initialDomainReloadingComplete (288ms)
-	LoadAllAssembliesAndSetupDomain (2555ms)
-		LoadAssemblies (2995ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (112ms)
-			TypeCache.Refresh (25ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (83ms)
-	FinalizeReload (8922ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4187ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (25ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (921ms)
-			ProcessInitializeOnLoadAttributes (2658ms)
-			ProcessInitializeOnLoadMethodAttributes (519ms)
-			AfterProcessingInitializeOnLoad (34ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (83ms)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 31.81 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 18.05 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6540 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (71.6 MB). Loaded Objects now: 7206.
-Memory consumption went from 306.3 MB to 234.8 MB.
-Total: 49.886800 ms (FindLiveObjects: 2.490300 ms CreateObjectMapping: 1.975100 ms MarkObjects: 28.634800 ms  DeleteObjects: 16.781800 ms)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3 unused Assets / (364.1 KB). Loaded Objects now: 6720.
+Memory consumption went from 111.8 MB to 111.4 MB.
+Total: 17.047800 ms (FindLiveObjects: 1.861000 ms CreateObjectMapping: 1.263600 ms MarkObjects: 13.643500 ms  DeleteObjects: 0.276000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2102.246060 seconds.
-  path: Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller
-  artifactKey: Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/PlayerCharacter/NewTransformBasedAnimations/Player Transform Based Animator.controller using Guid(4d48acf3d9ef5884a942706defaa541a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bfb5c88d0b64a7adc82a6403cf6cdf') in 0.653169 seconds
+  Time since last request: 277966.676763 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue
+  artifactKey: Guid(2e0479cae0555d54d898046e31c3fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue using Guid(2e0479cae0555d54d898046e31c3fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6673a18c3a9831fe11acebf24b63f22') in 0.060269 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.143419 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01
+  artifactKey: Guid(d030a18a4e66021499a34ca3a7d06dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01 using Guid(d030a18a4e66021499a34ca3a7d06dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d7be3b873112b4b5e0329ecbc4da79') in 0.014572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.621910 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack
+  artifactKey: Guid(78ed206a29845ed49b4062c26a8a1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack using Guid(78ed206a29845ed49b4062c26a8a1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74541c957835415432efe5a806b25386') in 0.025630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.783437 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue.png
+  artifactKey: Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue.png using Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6232c30292b0fb7c4be8c290c7e4c38f') in 0.985660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.419129 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue.png
+  artifactKey: Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue.png using Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4096b10b46b0b9f1888c8ce41cf012') in 0.110048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.623036 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06
+  artifactKey: Guid(9606d8d4ced61674783deda719b077d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06 using Guid(9606d8d4ced61674783deda719b077d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db24302b9f3b4b7ccdeeddabb8f4c10') in 0.002288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.952905 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_boot_l_06.png
+  artifactKey: Guid(add7b98e4870e9d4c8e1dd5e07e3de1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_boot_l_06.png using Guid(add7b98e4870e9d4c8e1dd5e07e3de1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1df5b4159312824f3becbae9d25b6a6') in 0.163065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.668109 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_face_06.png
+  artifactKey: Guid(7db7af78e8f9c45418a407bdd7958560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_face_06.png using Guid(7db7af78e8f9c45418a407bdd7958560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e89ad5b5c7af73a71abf29458285ec36') in 0.266821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.101554 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_leg_l_06.png
+  artifactKey: Guid(0038d4b0669b99846b9be93321f9d7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack06/Rogue_leg_l_06.png using Guid(0038d4b0669b99846b9be93321f9d7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c3ec02abb5ee93f3044e908335d2b0') in 0.068525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 114.336153 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_boot_l_01.png
+  artifactKey: Guid(6fa8902135d83ff49a376c05761b61d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_boot_l_01.png using Guid(6fa8902135d83ff49a376c05761b61d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2acc8e03b0ae93c20377332989b277') in 0.267083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.061016 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_wrist_r_01.png
+  artifactKey: Guid(661842e23ba86e34abbf52c56c321411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_wrist_r_01.png using Guid(661842e23ba86e34abbf52c56c321411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9fe3d4709f976d537eaaff483241a2') in 0.425394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.031880 seconds.
+  path: Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_leg_r_01.png
+  artifactKey: Guid(7b78357522a34d64bb8775b962b0deb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/2DArt/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Pack01/Rogue_leg_r_01.png using Guid(7b78357522a34d64bb8775b962b0deb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef4e4ec94f162480b5055040801b40') in 0.174211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 25.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3 unused Assets / (364.1 KB). Loaded Objects now: 6727.
+Memory consumption went from 115.4 MB to 115.0 MB.
+Total: 29.510000 ms (FindLiveObjects: 3.458400 ms CreateObjectMapping: 2.253100 ms MarkObjects: 23.249600 ms  DeleteObjects: 0.543200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
